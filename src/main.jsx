@@ -6,10 +6,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './assets/component/home/Home';
+import Calculate from './assets/component/calculate/Calculate';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className='text-xl  btn btn-primary '>Hello world!</div>,
+    element: <Home></Home>
+  },
+  {
+    path: "/calculate",
+    element:<Calculate></Calculate>
   },
 ]);
 createRoot(document.getElementById('root')).render(
